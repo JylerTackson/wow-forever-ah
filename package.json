@@ -1,0 +1,14 @@
+{
+  "name": "wow-forever-ah",
+  "private": true,
+  "description": "WoW: Forever auction house tracker with a web UI",
+  "type": "module",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node --env-file=.env --no-warnings=ExperimentalWarning server.mjs",
+    "collect": "node --env-file=.env --no-warnings=ExperimentalWarning collector.mjs --loop",
+    "collect:once": "node --env-file=.env --no-warnings=ExperimentalWarning collector.mjs",
+    "sync:professions": "node --env-file=.env --no-warnings=ExperimentalWarning sync-professions.mjs",
+    "query": "node --no-warnings=ExperimentalWarning query.mjs"
+  }
+}
